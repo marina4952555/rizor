@@ -1,0 +1,263 @@
+.characteristics__main{
+    margin-top:39px;
+}
+
+.characteristics__image{
+    display:none;
+}
+
+.characteristics__name{
+    text-align:center;
+    line-height:36px;
+    margin:26px auto 0;
+    width:200px;
+}
+
+.characteristics__name span{
+    letter-spacing:-3px;
+}
+
+.characteristics__list{
+    list-style:none;
+    padding:0;
+    text-align:center;
+    margin:34px 0 0;
+}
+
+.characteristics__item{
+    position:relative;
+    padding-top:84px;
+}
+    
+.characteristics__item:not(:first-child){
+    margin:35px auto 0;
+}
+
+.characteristics__item::before{
+    content:"";
+    position:absolute;
+    top:16px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.characteristics__item--body::before{
+    width:68px;
+    height:51px;
+    background:url(/source/img/decor/body-mobile.png) no-repeat center;
+}
+
+.characteristics__item--wheel{
+    width:220px;
+}
+
+.characteristics__item--wheel::before{
+    width:53px;
+    height:53px;
+    background:url(/source/img/decor/wheel-mobile.png) no-repeat center;
+}
+
+.characteristics__item--weight{
+    width:230px;
+}
+
+.characteristics__item--weight::before{
+    width:47px;
+    height:52px;
+    background:url(/source/img/decor/weight-mobile.png) no-repeat center;
+}
+
+.characteristics__item--power{
+    width:290px;
+}
+
+.characteristics__item--power::before{
+    width:50px;
+    height:40px;
+    background:url(/source/img/decor/power-mobile.png) no-repeat center;
+}
+
+.characteristics__title{
+    font-family:"Roboto","Arial",sans-serif;
+    font-weight:700;
+    font-size:16px;
+    line-height:30px;
+}
+
+.characteristics__text{
+    font-size:14px;
+    margin:10px 0 0;
+}
+
+@media (min-width:@tablet-width){
+    
+    .characteristics{
+        margin-top:144px;
+    }
+    
+    .characteristics__main{
+        margin-top:67px;
+        margin-left:445px;
+    }
+
+    .characteristics__top{
+        display:flex;
+    }
+    
+    .characteristics__image{
+        display:block;
+        margin-left:-2.87vw;
+    }
+    
+    .characteristics__name{
+        text-align:left;
+        width:185px;
+        margin-top:182px;
+        margin-left:63px;
+    }
+    
+    .characteristics__list{
+        display:flex;
+        flex-wrap:wrap;
+        text-align:left;
+        margin-top:0;
+        margin-left:73px;
+    }
+    
+    .characteristics__item{
+        width:28.65vw;
+        padding-top:79px;
+        margin-left:0;
+    }
+    
+    .characteristics__item:not(:first-child){
+        margin-top:30px;
+        margin-left:0;
+    }
+    
+    .characteristics__item:nth-child(2){
+        margin-top:0;
+    }
+    
+    .characteristics__item:nth-child(odd){
+        width:40.63vw;
+        margin-right:61px;
+    }
+    
+    .characteristics__item::before{
+        top:11px;
+        left:0;
+        transform:translateX(0)
+    }
+
+    .characteristics__title{
+        letter-spacing:1px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .characteristics{
+        position:relative;
+        margin-top:200px;
+    }
+    
+    .characteristics::before{
+        content:"";
+        position:absolute;
+        top:-149px;
+        right:192px;
+        width:292px;
+        height:768px;
+        background:url(/source/img/decor/rizor-decor.png) no-repeat center;
+    }
+    
+    .characteristics__main{
+        margin-top:88px;
+        margin-left:375px;
+    }
+    
+    .characteristics__name{
+        width:auto;
+        margin-top:206px;
+        margin-left:375px;
+    }
+    
+    .characteristics__image{
+        position:absolute;
+        width:789px;
+        height:844px;
+        z-index:-1;
+        margin-left:0;
+    }
+    
+    .characteristics__list{
+        margin-top:17px;
+        margin-left:896px;
+        margin-right:375px;
+    }
+    
+    .characteristics__item{
+        width:250px;
+        margin-right:100px;
+    }
+    
+    .characteristics__item:not(:first-child):not(:nth-child(2)){
+        margin-top:2px;
+    }
+    
+    .characteristics__item:nth-child(odd){
+        width:312px;
+        margin-right:39px;
+    }
+    
+    .characteristics__item:nth-child(even){
+        margin-right:0;
+    }
+
+    .characteristics__item::before{
+        top:53px;
+        z-index:-1;
+    }
+    
+    .characteristics__item--body::before{
+        top:50px;
+        left:-60px;
+        width:89px;
+        height:67px;
+        background:url(/source/img/decor/body-desktop.png) no-repeat center;
+    }
+
+    .characteristics__item--wheel::before{
+        top:45px;
+        left:-50px;
+        width:70px;
+        height:70px;
+        background:url(/source/img/decor/wheel-desktop.png) no-repeat center;
+    }
+    
+    .characteristics__item--weight::before{
+        top:40px;
+        left:-45px;
+        width:62px;
+        height:68px;
+        background:url(/source/img/decor/weight-desktop.png) no-repeat center;
+    }
+
+    .characteristics__item--power::before{
+        top:55px;
+        left:-50px;
+        width:66px;
+        height:53px;
+        background:url(/source/img/decor/power-desktop.png) no-repeat center;
+    }
+    
+    .characteristics__title{
+        font-size:20px;
+    }
+    .characteristics__text{
+        font-size:16px;
+        line-height:24px;
+        width:255px;
+    }
+}

@@ -1,0 +1,170 @@
+.promo{
+    position:relative;
+    width:320px;
+    height:430px;
+    box-sizing:border-box;
+    padding-top:135px;
+    margin:0 auto;
+}
+
+.promo__description{
+    position:relative;
+    color:#fff;
+    z-index:1;
+}
+
+.promo__title{
+    font-size:30px;
+    letter-spacing:2px;
+    line-height:35px;
+}
+
+.promo__title span{
+    letter-spacing:-5px;
+}
+
+.promo__text{
+    font-family:"Roboto","Arial",sans-serif;
+    font-weight:700;
+    font-size:12px;
+    line-height:20px;
+    text-transform:uppercase;
+    margin-top:17px;
+    letter-spacing:1px;
+}
+
+.promo__video{
+    position:absolute;
+    top:0;right:0;
+}
+
+.promo__image{
+    display:block;
+    width:320px;
+    height:430px;
+}
+
+.promo__play{
+    display:none;
+}
+
+@media (min-width:@tablet-width){
+    
+    .promo{
+        width:auto;
+        height:750px;
+        padding:239px 22px 0;
+    }
+    
+    .promo__description{
+        color:#000;
+    }
+    
+    .promo__title{
+        font-size:64px;
+        line-height:77px;
+        letter-spacing:5px;
+        margin-left:-6px;
+    }
+    
+    .promo__title span{
+        letter-spacing:-10px;
+    }
+    
+    .promo__text{
+        position:relative;
+        font-size:14px;
+        margin-top:28px;
+    }
+    
+    .promo__text::after{
+        content:"";
+        position:absolute;
+        bottom:-138px;
+        left:30px;
+        width:11px;
+        height:95px;
+        background:url(/source/img/decor/arrow.png) no-repeat center;
+    }
+    
+    .promo__video{
+        right:-2.87vw;
+    }
+    
+    .promo__play{
+        display:inline-block;
+    }
+    
+    .promo__play::after{
+        content:"";
+        position:absolute;
+        bottom:-83px;
+        left:-43px;
+        width:18px;
+        height:72px;
+        background:url(/source/img/decor/play-decor.png) no-repeat center;
+    }
+    
+    .promo__image{
+        width:478px;
+        height:750px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .promo{
+        position:relative;
+        width:auto;
+        padding-top:184px;
+    }
+    
+    .promo span{
+        letter-spacing:-12px;
+    }
+    
+    .promo::before{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        top:-38px;
+        left:0;
+        width:511px;
+        height:878px;
+        background:url(/source/img/decor/gear.png) no-repeat center;
+    }
+    
+    .promo__description{
+        margin-left:353px;
+    }
+    
+    .promo__title{
+        font-size:80px;
+        line-height:95px;
+        letter-spacing:6px;
+    }
+    
+    .promo__text{
+        font-size:20px;
+        line-height:30px;
+        margin-top:21px;
+    }
+    
+    .promo__text::after{
+        bottom:-130px;
+    }
+    
+    .promo__video{
+        right:0;
+    }
+    
+    .promo__play::after{
+        bottom:-80px;
+        left:-38px;
+    }
+    
+    .promo__image{
+        width:1076px;
+        height:750px;
+    }
+}

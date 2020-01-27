@@ -1,0 +1,115 @@
+.modes__text{
+    margin-top:26px;
+}
+
+.modes__li{
+    margin-top:27px;
+}
+
+.modes__li:nth-of-type(3){
+    margin-top:16px;
+}
+
+.modes__li::before{
+    width:20px;
+    top:9px;
+}
+
+.modes__play{
+    display:none;
+}
+
+.modes__image{
+    margin-top:43px;
+}
+
+@media (min-width:@tablet-width){
+    
+    .modes{
+        display:flex;
+    }
+    
+    .modes__description{
+        margin-top:128px;
+        margin-left:73px;
+    }
+    
+    .modes__text{
+        margin-top:28px;
+    }
+    
+    .modes__video{
+        margin-left:auto;
+        margin-right:-2.87vw;
+    }
+    
+    .modes__image{
+        width:395px;
+        height:600px;
+        margin-top:45px;
+    }
+    
+    .modes__play{
+        display:inline-block;
+        top:595px;
+    }
+
+}
+
+@media (min-width:@desktop-width){
+    
+    .modes{
+        width:100%;
+        margin-top:50px;
+        margin-left:375px;
+    }
+    
+    .modes__description{
+        position:relative;
+        margin-top:154px;
+        margin-right:100px;
+        margin-left:-3px;
+    }
+    
+    .modes__description::before{
+        content:"";
+        position:absolute;
+        top:40px;
+        right:-54px;
+        width:156px;
+        height:474px;
+        background:url(/source/img/decor/play-decor-m.png) no-repeat center;
+    }
+    
+    .modes__li{
+        margin-top:18px;
+    }
+    
+    .modes__li:nth-of-type(3){
+        margin-top:20px;
+    }
+    
+    .modes__li::before{
+        width:32px;
+        top:12px;
+    }
+    
+    .modes__prop{
+        width:100px;
+    }
+    
+    .modes__video{
+        margin-top:46px;
+        margin-right:0;
+    }
+    
+    .modes__image{
+        width:1075px;
+        height:750px;
+    }
+    
+    .modes__play{
+        top:678px;
+        left:8px;
+    }
+}

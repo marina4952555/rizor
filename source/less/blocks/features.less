@@ -1,0 +1,132 @@
+.features__list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+@media (min-width:@tablet-width){
+    
+    .features{
+        position:relative;
+        margin-top:150px;
+        padding-top:1px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .features{
+        position:relative;
+        margin-top:200px;
+        background:url(/source/img/decor/gear.png) no-repeat 0 1175px;
+    }
+    
+    .features::before{
+        content:"";
+        position:absolute;
+        top:-100px;
+        right:190px;
+        width:292px;
+        height:768px;
+        background:url(/source/img/decor/rizor-decor.png) no-repeat center;
+    }
+    
+    .features__list{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+}
+
+
+.feature{
+    padding-bottom:48px;
+}
+
+.feature__title{
+    text-align:center;
+    margin-top:24px;
+}
+
+.feature__text{
+    margin:30px 0 0 29px;
+}
+
+.feature__text--accum,.feature__text--electronics,.feature__text--indicators{
+    margin-left:0;
+}
+
+.feature__text--mode{
+    position:relative;
+    margin-top:16px;
+    padding-left:38px;
+    text-transform:none;
+}
+
+.feature__list-item:first-child,.feature__text--mode:first-child{
+    margin-top:0;
+}
+
+.feature__list-item::before,.feature__text--mode::before{
+    content:"";
+    position:absolute;
+    top:10px;
+    left:2px;
+    width:30px;
+    height:5px;
+    background:url(/source/img/decor/li.jpg) no-repeat center;
+}
+
+.feature__image{
+    margin-left:-3.45vw;
+    margin-top:38px;
+}
+
+.feature__list{
+    list-style:none;
+    padding:0;
+    margin:23px 0 0 29px;
+}
+
+.feature__list-item{
+    position:relative;
+    text-transform:lowercase;
+    margin-top:16px;
+    padding-left:38px;
+}
+
+@media (min-width:@tablet-width){
+    
+    .feature__design{
+        display:flex;
+    }
+        
+    .feature__title{
+        text-align:left;
+        letter-spacing:3px;
+    }
+    
+    .feature__image,.feature__list,.feature__text{
+        margin-left:0;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .feature__text{
+        margin-top:26px;
+    }
+    
+    .feature__text--mode{
+        padding-left:44px;
+    }
+    
+    .feature__list{
+        margin-top:20px;
+    }
+    
+    .feature__list-item{
+        margin-top:20px;
+        padding-left:42px;
+    }
+}

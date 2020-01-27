@@ -1,0 +1,51 @@
+.design{
+    padding-bottom:50px;
+}
+
+.design__text{
+    line-height:30px;
+}
+
+.design__video{
+    display:none;
+}
+
+@media (min-width:@tablet-width){
+    
+    .design{
+        display:flex;
+    }
+    
+    .design__description{
+        width:240px;
+        margin-top:168px;
+        margin-left:73px;
+    }
+    
+    .design__video{
+        display:block;
+        margin-left:-2.87vw;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .design{
+        width:100%;
+    }
+    
+    .design__image{
+        width:745px;
+        height:750px;
+    }
+    
+    .design__description{
+        width:270px;
+        margin-top:178px;
+        margin-left:100px;
+    }
+    
+    .design__video{
+        margin-left:0;
+    }
+}

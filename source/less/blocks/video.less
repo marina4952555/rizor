@@ -1,0 +1,116 @@
+.video{
+    width:320px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.video__button{
+    position:absolute;
+    display:inline-block;
+    top:49%;
+    left:51%;
+    width:25px;
+    height:28px;
+    padding:0;
+    background:0 0;
+    border:0;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+}
+
+.video__button:focus .video__play-image:not(.video__play-image-circle),.video__button:hover .video__play-image:not(.video__play-image-circle){
+    transform:translate(-50%,-50%) scale(1.1);
+}
+
+.video__button:active .video__play-image:not(.video__play-image-circle){
+    transform:translate(-50%,-50%) scale(.8);
+    opacity:.3;
+}
+
+.video__button--circle{
+    width:60px;
+    height:60px;
+    background:rgba(255,255,255,.8);
+    border-radius:50%;
+}
+
+.video__button--circle:focus,.video__button--circle:hover{
+    transform:translate(-50%,-50%) scale(1.1);
+}
+
+.video__button--circle:active{
+    transform:translate(-50%,-50%) scale(.8);
+    opacity:.3;
+}
+
+.video__play-image{
+    position:absolute;
+    width:25px;
+    height:28px;
+    top:50%;
+    left:56%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+
+@media (min-width:@tablet-width){
+    
+    .video{width:auto;
+        margin-left:0;
+        margin-right:0;
+    }
+    
+    .video__button{
+        width:40px;height:45px;
+    }
+    
+    .video__button--out{
+        top:119px;left:8px;
+    }
+    
+    .video__button--out::before{
+        content:"Смотреть видео";
+        position:absolute;
+        top:11px;
+        left:-43px;
+        font-family:"Roboto","Arial",sans-serif;
+        font-weight:700;
+        font-size:10px;
+        line-height:14px;
+        letter-spacing:1px;
+        text-transform:uppercase;
+        width:100%;text-align:left;
+        -webkit-transform:rotate(-90deg);
+        transform:rotate(-90deg);
+    }
+    
+    .video__button--circle{
+        width:100px;
+        height:100px;
+    }
+    
+    .video__play-image{
+        width:40px;
+        height:45px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .video__button--out{
+        top:111px;
+        left:-2px;
+    }
+    
+    .video__button--out,.video__button--out .video__play-image{
+        width:72px;
+        height:70px;
+    }
+    
+    .video__button--out::before{
+        top:16px;
+        left:-50px;
+        font-size:12px;
+    }
+}

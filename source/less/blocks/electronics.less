@@ -1,0 +1,108 @@
+.electronics{
+    padding-bottom:0;
+}
+
+.electronics__description{
+    margin-left:10px;
+}
+
+.electronics__text:nth-child(2){
+    margin-top:12px;
+}
+
+.electronics__properties{
+    margin-top:33px;
+    margin-left:35px;
+}
+
+.electronics__video{
+    margin-top:43px;
+    margin-left:-3.45vw;
+}
+
+@media (min-width:321px){
+
+    .electronics__video{
+        margin-left:auto;
+    }
+}
+
+@media (min-width:@tablet-width){
+    
+    .electronics{
+        display:flex;
+        flex-direction:column-reverse;
+        margin:0 73px;
+    }
+        
+    .electronics__container{
+        margin-top:27px;
+    }
+        
+    .electronics__description{
+        display:flex;
+    }
+        
+    .electronics__text{
+        margin-left:-3.45vw;
+    }
+        
+    .electronics__properties{
+        display:flex;
+        flex-direction:column;
+        margin-top:0;
+        margin-left:120px;
+        margin-right:97px;
+    }
+        
+    .electronics__video{
+        margin-top:45px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .electronics__image,.electronics__video{
+        width:578px;
+        height:277px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    .electronics{
+        flex-direction:column;
+        width:430px;
+    }
+
+    .electronics__container{
+        margin-top:0;
+    }
+    
+    .electronics__title{
+        margin-top:90px;
+    }
+    
+    .electronics__description{
+        flex-direction:column;
+        margin-left:0;
+    }
+    
+    .electronics__text{
+        margin-left:0;
+    }
+    
+    .electronics__properties{
+        flex-direction:row;
+        margin-top:38px;
+        margin-left:0;
+    }
+    
+    .electronics__video{
+        margin-top:62px;
+        margin-left:0
+    }
+    
+    .electronics__image,.electronics__video{
+        width:400px;
+        height:280px;
+    }
+}

@@ -1,0 +1,159 @@
+.properties,.properties__item{
+    display:flex;
+}
+    
+.properties{
+    position:relative;
+    margin-top:45px;
+    margin-left:29px;
+}
+
+.properties__item{
+    flex-direction:column-reverse;
+}
+
+.properties__item:first-child{
+    margin-right:42px;
+}
+
+.properties__item:nth-child(2){
+    align-self:flex-start;
+}
+
+.properties__item--electronics{
+    position:relative;
+    padding-top:52px;
+}
+
+.properties__item--electronics::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.properties__item--electronics:first-child{
+    margin-right:10px;
+}
+
+.properties__item--engine::before{
+    width:54px;
+    height:42px;
+    background:url(/source/img/decor/engine-mobile.png) no-repeat center;
+}
+
+@media (min-width:@desktop-width){
+    
+    .properties__item--engine::before{
+        width:76px;
+        height:60px;
+        background-image:url(/source/img/decor/engine-desktop.png);
+    }
+}
+
+.properties__item--gyroscope::before{
+    top:20px;
+    width:69px;
+    height:22px;
+    background:url(/source/img/decor/gyroscope-mobile.png) no-repeat center;
+}
+
+@media (min-width:@desktop-width){
+    
+    .properties__item--gyroscope::before{
+        top:12px;
+        width:98px;
+        height:32px;
+        background-image:url(/source/img/decor/gyroscope-desktop.png);
+    }
+}
+
+.properties__item--accum:first-child{
+    margin-right:57px;
+}
+
+.properties__title{
+    font-size:14px;
+    line-height:18px;
+    color:#666;
+    margin:8px 0 0;
+}
+
+.properties__title--accum{
+    margin-left:-7px;
+}
+
+.properties__text{
+    font-size:40px;
+    line-height:30px;
+    color: @color-site;
+    width:120px;
+    margin:0 0 0 -6px;
+    letter-spacing:-3px;
+}
+
+.properties__text--low{
+    font-size:18px;
+    letter-spacing:-1px;
+}
+
+.properties__text--modes{
+    margin-bottom:6px;
+}
+
+@media (min-width:@tablet-width){
+    
+    .properties{
+        margin-left:0;
+    }
+    
+    .properties__item--electronics:nth-child(2){
+        margin-top:16px;
+    }
+    
+    .properties__title--accum{
+        width:100px;
+    }
+}
+
+@media (min-width:@desktop-width){
+    
+    .properties{
+        margin-top:74px;
+    }
+    
+    .properties__item:first-child{
+        margin-right:76px;
+    }
+    
+    .properties__item--electronics:first-child{
+        margin-right:70px;
+    }
+    
+    .properties__item--electronics .properties__title{
+        margin-top:16px;
+    }
+    
+    .properties__item--accum:first-child{
+        margin-right:50px;
+    }
+    
+    .properties__title{
+        font-size:16px;
+    }
+    
+    .properties__title--accum{
+        width:120px;
+        margin-left:0;
+    }
+    
+    .properties__text{
+        font-size:60px;
+        line-height:60px;
+        width:auto;
+    }
+    
+    .properties__text--low{
+        font-size:23px;
+    }
+}
