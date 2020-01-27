@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         <title>Rizor</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" crossorigin="anonymous">
-        <link rel="preload" href="fonts/Roboto-Light.ttf" as="font" crossorigin="anonymous">
-        <link rel="preload" href="fonts/RubikMonoOne-Regular.ttf" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/RubikMonoOne-Regular.woff2" as="font" crossorigin="anonymous">
     </head>
     
     <body>
@@ -47,251 +46,266 @@
                 </nav>
             </header>
             <section class="promo">
-                <div class="promo__description">
-                    <h1 class="promo__title title">Rizor<br>Hovertrax<br><span>4.0</span></h1>
-                    <p class="promo__text">Маневренность, легкость,<br>экологичность</p>
-                </div>
-                <div class="video promo__video">
-                    <picture>
-                        <source type="image/webp" media="(min-width:1920px)" srcset="img/content/first-video-desktop.webp">
-                        <source type="image/webp" media="(min-width:768px)" srcset="img/content/first-video-tablet.webp">
-                        <source type="image/webp" srcset="img/content/first-video-mobile.webp"><source media="(min-width:1920px)" srcset="img/content/first-video-desktop.jpg">
-                        <source media="(min-width:768px)" srcset="img/content/first-video-tablet.jpg">
-                        <img class="promo__image" src="img/content/first-video-mobile.jpg" width="320" height="430" alt="Гироскутер Rizor Hovertrax 4.0">
-                    </picture>
-                    <button class="video__button video__button--out promo__play">
-                        <svg class="video__play-image">
-                            <use xlink:href="#play-button"></use>
-                        </svg>
-                    </button>
+                <div class="container">
+                    <div class="promo__description">
+                        <h1 class="promo__title title">
+                            Rizor
+                            <br>
+                            Hovertrax
+                            <br>
+                            <span>4.0</span>
+                        </h1>
+                        <p class="promo__text">Маневренность, легкость,<br>экологичность</p>
+                    </div>
+                    <div class="video promo__video">
+                        <picture>
+                            <source type="image/webp" media="(min-width:1920px)" srcset="img/content/first-video-desktop.webp">
+                            <source type="image/webp" media="(min-width:768px)" srcset="img/content/first-video-tablet.webp">
+                            <source type="image/webp" srcset="img/content/first-video-mobile.webp">
+                            <source media="(min-width:1920px)" srcset="img/content/first-video-desktop.jpg">
+                            <source media="(min-width:768px)" srcset="img/content/first-video-tablet.jpg">
+                            <img class="promo__image" src="img/content/first-video-mobile.jpg" width="320" height="430" alt="Гироскутер Rizor Hovertrax 4.0">
+                        </picture>
+                        <button class="video__button video__button--out promo__play">
+                            <svg class="video__play-image">
+                                <use xlink:href="#play-button"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </section>
         </div>
         <main>
             <div class="wrapper">
                 <section class="features c-block" id="features">
-                    <h2 class="features__title title title--section">Преимущества</h2>
-                    <ul class="features__list">
-                        <li class="features__item feature design">
-                            <div class="video design__video">
-                                <picture>
-                                    <source type="image/webp" media="(min-width:1920px)" srcset="img/content/features-video-desktop.webp">
-                                    <source type="image/webp" srcset="img/content/features-video-tablet.webp">
-                                    <source media="(min-width:1920px)" srcset="img/content/features-video-desktop.jpg">
-                                    <img class="design__image" src="img/content/features-video-tablet.jpg" width="374" height="600" alt="Обложка видео о дизайне гироскутера">
-                                </picture>
-                                <button class="video__button video__button--circle feature__play">
-                                    <svg class="video__play-image video__play-image-circle" width="25" height="27">
-                                        <use xlink:href="#play-button"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="design__description">
-                                <h3 class="feature__title title">Дизайн</h3>
-                                <p class="feature__text design__text">Внешний вид скутера дышит идеями футуризма:</p>
-                                <ul class="feature__list">
-                                    <li class="feature__list-item">Плавные линии</li>
-                                    <li class="feature__list-item">Подсветка светодиодными индикаторами</li>
-                                    <li class="feature__list-item">Рельефные бамперы, оснащенные защитными панелями</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="features__item feature colors">
-                            <div class="colors__description">
-                                <h3 class="feature__title title">Цвет</h3>
-                                <p class="feature__text colors__text">Модель представлена сразу в нескольких цветах.</p>
-                            </div>
-                            <div class="colors__list">
-                                <input class="colors__radio visually-hidden" type="radio" name="color" id="yellow">
-                                <label class="colors-item colors-item--yellow" for="yellow">
-                                <span class="visually-hidden">Жёлтый</span>
-                            </label> 
-                            <input class="colors__radio visually-hidden" type="radio" name="color" id="blue"> 
-                            <label class="colors-item colors-item--blue" for="blue">
-                                <span class="visually-hidden">Синий</span>
-                            </label> 
-                            <input class="colors__radio visually-hidden" type="radio" name="color" id="red"> 
-                            <label class="colors-item colors-item--red" for="red">
-                                <span class="visually-hidden">Красный</span>
-                            </label> 
-                            <input class="colors__radio visually-hidden" type="radio" name="color" id="grey"> 
-                            <label class="colors-item colors-item--grey" for="grey">
-                                <span class="visually-hidden">Серый</span>
-                            </label> <input class="colors__radio visually-hidden" type="radio" name="color" id="black"> 
-                            <label class="colors-item colors-item--black" for="black">
-                                <span class="visually-hidden">Чёрный</span>
-                            </label>
-                        </div>
-                        <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="img/content/color-desktop.webp">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/color-tablet.webp">
-                            <source type="image/webp" srcset="img/content/color-mobile.webp">
-                            <source media="(min-width:1920px)" srcset="img/content/color-video-desktop.jpg">
-                            <source media="(min-width:768px)" srcset="img/content/color-video-tablet.jpg">
-                            <img class="colors__image" src="img/content/color-mobile.jpg" width="300" height="261" alt="Гироскутер в чёрном цвете">
-                        </picture>
-                    </li>
-                    <li class="features__item feature indicators">
-                        <div class="indicators__description">
-                            <h3 class="feature__title title">Индикаторы</h3>
-                            <p class="feature__text feature__text--indicators">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
-                            <p class="feature__text feature__text--indicators indicators__text">Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.</p>
-                        </div>
-                        <div class="video indicators__video">
-                            <picture><source type="image/webp" media="(min-width: 1920px)" srcset="img/content/indicators-video-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/indicators-video-tablet.webp">
-                                <source type="image/webp" srcset="img/content/indicators-video-mobile.webp">
-                                <source media="(min-width:1920px)" srcset="img/content/indicators-video-desktop.jpg">
-                                <source media="(min-width:768px)" srcset="img/content/indicators-video-tablet.jpg">
-                                <img class="feature__image indicators__image" src="img/content/indicators-video-mobile.jpg" width="320" height="256" alt="Обложка видео об индикаторах гироскутера">
-                            </picture>
-                            <button class="video__button video__button--out indicators__play">
-                                <svg class="video__play-image" width="102" height="34">
-                                    <use xlink:href="#play-button"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="features__item feature modes">
-                        <div class="modes__description">
-                            <h3 class="feature__title title">Режимы</h3>
-                            <p class="feature__text modes__text">Помимо «умной» подсветки, <b>Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
-                            <p class="feature__text feature__text--mode modes__li">Один для продвинутых пользователей</p>
-                            <p class="feature__text feature__text--mode modes__li">Второй для новичков</p>
-                            <div class="feature__properties properties">
-                                <div class="properties__item">
-                                    <p class="properties__title">Максимальная<br>скорость</p>
-                                    <p class="properties__text title">13&thinsp;<span class="properties__text properties__text--low">км/ч</span></p>
+                    <div class="container">
+                        <h2 class="features__title title title--section">Преимущества</h2>
+                        <ul class="features__list">
+                            <li class="features__item feature design">
+                                <div class="video design__video">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width:1920px)" srcset="img/content/features-video-desktop.webp">
+                                        <source type="image/webp" srcset="img/content/features-video-tablet.webp">
+                                        <source media="(min-width:1920px)" srcset="img/content/features-video-desktop.jpg">
+                                        <img class="design__image" src="img/content/features-video-tablet.jpg" width="374" height="600" alt="Обложка видео о дизайне гироскутера">
+                                    </picture>
+                                    <button class="video__button video__button--circle feature__play">
+                                        <svg class="video__play-image video__play-image-circle" width="25" height="27">
+                                            <use xlink:href="#play-button"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="properties__item modes__prop">
-                                    <p class="properties__title">Скоростных режима</p>
-                                    <p class="properties__text properties__text--modes title">2</p>
+                                <div class="design__description">
+                                    <h3 class="feature__title title">Дизайн</h3>
+                                    <p class="feature__text design__text">Внешний вид скутера дышит идеями футуризма:</p>
+                                    <ul class="feature__list">
+                                        <li class="feature__list-item">Плавные линии</li>
+                                        <li class="feature__list-item">Подсветка светодиодными индикаторами</li>
+                                        <li class="feature__list-item">Рельефные бамперы, оснащенные защитными панелями</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="video modes__video">
-                            <picture>
-                                <source type="image/webp" media="(min-width:1920px)" srcset="img/content/modes-video-desktop.webp">
-                                <source type="image/webp" media="(min-width:768px)" srcset="img/content/modes-video-tablet.webp">
-                                <source type="image/webp" srcset="img/content/modes-video-mobile.webp">
-                                <source media="(min-width:1920px)" srcset="img/content/modes-video-desktop.jpg">
-                                <source media="(min-width:768px)" srcset="img/content/modes-video-tablet.jpg">
-                                <img class="feature__image modes__image" src="img/content/modes-video-mobile.jpg" width="320" height="300" alt="Обложка видео о режимах гироскутера">
-                            </picture>
-                            <button class="video__button video__button--out modes__play">
-                                <svg class="video__play-image">
-                                    <use xlink:href="#play-button"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="features__item feature accum">
-                        <div class="accum__description">
-                            <h3 class="feature__title title">Аккумулятор</h3>
-                            <p class="feature__text feature__text--accum accum__text">Имеет съемную аккумуляторную батарею. Это позволяет легко вытащить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть документы, подтверждающие лицензию на его производство и использование.</p>
-                        </div>
-                        <div class="accum__features">
-                            <div class="properties accum__properties">
-                                <div class="properties__item properties__item--accum">
-                                    <p class="properties__title">Запас хода</p>
-                                    <p class="properties__text title">25&thinsp;<span class="properties__text properties__text--low">км</span></p>
+                            </li>
+                            <li class="features__item feature colors">
+                                <div class="colors__description">
+                                    <h3 class="feature__title title">Цвет</h3>
+                                    <p class="feature__text colors__text">Модель представлена сразу в нескольких цветах.</p>
                                 </div>
-                                <div class="properties__item">
-                                    <p class="properties__title properties__title--accum">Время зарядки</p>
-                                    <p class="properties__text title">2&thinsp;<span class="properties__text properties__text--low">ч</span></p>
-                                </div>
+                                <div class="colors__list">
+                                    <input class="colors__radio visually-hidden" type="radio" name="color" id="yellow">
+                                    <label class="colors-item colors-item--yellow" for="yellow">
+                                    <span class="visually-hidden">Жёлтый</span>
+                                </label> 
+                                <input class="colors__radio visually-hidden" type="radio" name="color" id="blue"> 
+                                <label class="colors-item colors-item--blue" for="blue">
+                                    <span class="visually-hidden">Синий</span>
+                                </label> 
+                                <input class="colors__radio visually-hidden" type="radio" name="color" id="red"> 
+                                <label class="colors-item colors-item--red" for="red">
+                                    <span class="visually-hidden">Красный</span>
+                                </label> 
+                                <input class="colors__radio visually-hidden" type="radio" name="color" id="grey"> 
+                                <label class="colors-item colors-item--grey" for="grey">
+                                    <span class="visually-hidden">Серый</span>
+                                </label> <input class="colors__radio visually-hidden" type="radio" name="color" id="black"> 
+                                <label class="colors-item colors-item--black" for="black">
+                                    <span class="visually-hidden">Чёрный</span>
+                                </label>
                             </div>
                             <picture>
-                                <source type="image/webp" media="(min-width:1920px)" srcset="img/content/accum-desktop.webp"><source type="image/webp" media="(min-width:768px)" srcset="img/content/accum-tablet.webp">
-                                    <source type="image/webp" srcset="img/content/accum-mobile.webp">
-                                    <source media="(min-width:1920px)" srcset="img/content/accum-desktop.jpg">
-                                    <source media="(min-width:768px)" srcset="img/content/accum-tablet.jpg">
-                                    <img class="feature__image accum__image" src="img/content/accum-mobile.jpg" width="285" height="265" alt="Аккумулятор гироскутера">
-                                </picture>
-                            </div>
+                                <source type="image/webp" media="(min-width: 1920px)" srcset="img/content/color-desktop.webp">
+                                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/color-tablet.webp">
+                                <source type="image/webp" srcset="img/content/color-mobile.webp">
+                                <source media="(min-width:1920px)" srcset="img/content/color-video-desktop.jpg">
+                                <source media="(min-width:768px)" srcset="img/content/color-video-tablet.jpg">
+                                <img class="colors__image" src="img/content/color-mobile.jpg" width="300" height="261" alt="Гироскутер в чёрном цвете">
+                            </picture>
                         </li>
-                        <li class="features__item feature electronics">
-                            <div class="electronics__container">
-                                <h3 class="feature__title title electronics__title">Электроника</h3>
-                                <div class="electronics__description">
-                                    <div>
-                                        <p class="feature__text feature__text--electronics electronics__text">При эксплуатации <b>Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
-                                        <p class="feature__text feature__text--electronics electronics__text">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
-                                    </div>
-                                    <div class="properties electronics__properties">
-                                        <div class="properties__item properties__item--electronics properties__item--engine">
-                                            <p class="properties__title">Бесшумный двигатель</p>
-                                        </div>
-                                        <div class="properties__item properties__item--electronics properties__item--gyroscope">
-                                            <p class="properties__title">Встроенный гироскоп</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <li class="features__item feature indicators">
+                            <div class="indicators__description">
+                                <h3 class="feature__title title">Индикаторы</h3>
+                                <p class="feature__text feature__text--indicators">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
+                                <p class="feature__text feature__text--indicators indicators__text">Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.</p>
                             </div>
-                            <div class="video electronics__video">
-                                <picture>
-                                    <source type="image/webp" media="(min-width:1920px)" srcset="img/content/electronics-video-desktop.webp">
-                                    <source type="image/webp" media="(min-width:768px)" srcset="img/content/electronics-video-tablet.webp">
-                                    <source type="image/webp" srcset="img/content/electronics-video-mobile.webp"><source media="(min-width:1920px)" srcset="img/content/electronics-video-desktop.jpg">
-                                    <source media="(min-width:768px)" srcset="img/content/electronics-video-tablet.jpg">
-                                    <img class="electronics__image" src="img/content/electronics-video-mobile.jpg" width="320" height="276" alt="Обложка видео об электронике гироскутера">
+                            <div class="video indicators__video">
+                                <picture><source type="image/webp" media="(min-width: 1920px)" srcset="img/content/indicators-video-desktop.webp">
+                                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/indicators-video-tablet.webp">
+                                    <source type="image/webp" srcset="img/content/indicators-video-mobile.webp">
+                                    <source media="(min-width:1920px)" srcset="img/content/indicators-video-desktop.jpg">
+                                    <source media="(min-width:768px)" srcset="img/content/indicators-video-tablet.jpg">
+                                    <img class="feature__image indicators__image" src="img/content/indicators-video-mobile.jpg" width="320" height="256" alt="Обложка видео об индикаторах гироскутера">
                                 </picture>
-                                <button class="video__button video__button--circle">
-                                    <svg class="video__play-image video__play-image-circle" width="102" height="34">
+                                <button class="video__button video__button--out indicators__play">
+                                    <svg class="video__play-image" width="102" height="34">
                                         <use xlink:href="#play-button"></use>
                                     </svg>
                                 </button>
                             </div>
                         </li>
-                    </ul>
+                        <li class="features__item feature modes">
+                            <div class="modes__description">
+                                <h3 class="feature__title title">Режимы</h3>
+                                <p class="feature__text modes__text">Помимо «умной» подсветки, <b>Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
+                                <p class="feature__text feature__text--mode modes__li">Один для продвинутых пользователей</p>
+                                <p class="feature__text feature__text--mode modes__li">Второй для новичков</p>
+                                <div class="feature__properties properties">
+                                    <div class="properties__item">
+                                        <p class="properties__title">Максимальная<br>скорость</p>
+                                        <p class="properties__text title">13&thinsp;<span class="properties__text properties__text--low">км/ч</span></p>
+                                    </div>
+                                    <div class="properties__item modes__prop">
+                                        <p class="properties__title">Скоростных режима</p>
+                                        <p class="properties__text properties__text--modes title">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video modes__video">
+                                <picture>
+                                    <source type="image/webp" media="(min-width:1920px)" srcset="img/content/modes-video-desktop.webp">
+                                    <source type="image/webp" media="(min-width:768px)" srcset="img/content/modes-video-tablet.webp">
+                                    <source type="image/webp" srcset="img/content/modes-video-mobile.webp">
+                                    <source media="(min-width:1920px)" srcset="img/content/modes-video-desktop.jpg">
+                                    <source media="(min-width:768px)" srcset="img/content/modes-video-tablet.jpg">
+                                    <img class="feature__image modes__image" src="img/content/modes-video-mobile.jpg" width="320" height="300" alt="Обложка видео о режимах гироскутера">
+                                </picture>
+                                <button class="video__button video__button--out modes__play">
+                                    <svg class="video__play-image">
+                                        <use xlink:href="#play-button"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="features__item feature accum">
+                            <div class="accum__description">
+                                <h3 class="feature__title title">Аккумулятор</h3>
+                                <p class="feature__text feature__text--accum accum__text">Имеет съемную аккумуляторную батарею. Это позволяет легко вытащить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть документы, подтверждающие лицензию на его производство и использование.</p>
+                            </div>
+                            <div class="accum__features">
+                                <div class="properties accum__properties">
+                                    <div class="properties__item properties__item--accum">
+                                        <p class="properties__title">Запас хода</p>
+                                        <p class="properties__text title">25&thinsp;<span class="properties__text properties__text--low">км</span></p>
+                                    </div>
+                                    <div class="properties__item">
+                                        <p class="properties__title properties__title--accum">Время зарядки</p>
+                                        <p class="properties__text title">2&thinsp;<span class="properties__text properties__text--low">ч</span></p>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <source type="image/webp" media="(min-width:1920px)" srcset="img/content/accum-desktop.webp"><source type="image/webp" media="(min-width:768px)" srcset="img/content/accum-tablet.webp">
+                                        <source type="image/webp" srcset="img/content/accum-mobile.webp">
+                                        <source media="(min-width:1920px)" srcset="img/content/accum-desktop.jpg">
+                                        <source media="(min-width:768px)" srcset="img/content/accum-tablet.jpg">
+                                        <img class="feature__image accum__image" src="img/content/accum-mobile.jpg" width="285" height="265" alt="Аккумулятор гироскутера">
+                                    </picture>
+                                </div>
+                            </li>
+                            <li class="features__item feature electronics">
+                                <div class="electronics__container">
+                                    <h3 class="feature__title title electronics__title">Электроника</h3>
+                                    <div class="electronics__description">
+                                        <div>
+                                            <p class="feature__text feature__text--electronics electronics__text">При эксплуатации <b>Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
+                                            <p class="feature__text feature__text--electronics electronics__text">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
+                                        </div>
+                                        <div class="properties electronics__properties">
+                                            <div class="properties__item properties__item--electronics properties__item--engine">
+                                                <p class="properties__title">Бесшумный двигатель</p>
+                                            </div>
+                                            <div class="properties__item properties__item--electronics properties__item--gyroscope">
+                                                <p class="properties__title">Встроенный гироскоп</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video electronics__video">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width:1920px)" srcset="img/content/electronics-video-desktop.webp">
+                                        <source type="image/webp" media="(min-width:768px)" srcset="img/content/electronics-video-tablet.webp">
+                                        <source type="image/webp" srcset="img/content/electronics-video-mobile.webp"><source media="(min-width:1920px)" srcset="img/content/electronics-video-desktop.jpg">
+                                        <source media="(min-width:768px)" srcset="img/content/electronics-video-tablet.jpg">
+                                        <img class="electronics__image" src="img/content/electronics-video-mobile.jpg" width="320" height="276" alt="Обложка видео об электронике гироскутера">
+                                    </picture>
+                                    <button class="video__button video__button--circle">
+                                        <svg class="video__play-image video__play-image-circle" width="102" height="34">
+                                            <use xlink:href="#play-button"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <section class="characteristics c-block" id="characteristics">
-                    <h2 class="characteristics__main title title--section">Характеристики</h2>
-                    <div class="characteristics__top">
-                        <picture>
-                            <source type="image/webp" media="(min-width:1920px)" srcset="img/content/characteristics-desktop.webp">
-                            <source type="image/webp" srcset="img/content/characteristics-tablet.webp">
-                            <source media="(min-width:1920px)" srcset="img/content/characteristics-desktop.jpg">
-                            <img class="characteristics__image" src="img/content/characteristics-tablet.jpg" width="402" height="375" alt="Изображение гироскутера Rizor Hovertrax 4.0">
-                        </picture>
-                        <h2 class="characteristics__name title">Rizor Hovertrax <span>4.0</span></h2>
+                    <div class="container">
+                        <h2 class="characteristics__main title title--section">Характеристики</h2>
+                        <div class="characteristics__top">
+                            <picture>
+                                <source type="image/webp" media="(min-width:1920px)" srcset="img/content/characteristics-desktop.webp">
+                                <source type="image/webp" srcset="img/content/characteristics-tablet.webp">
+                                <source media="(min-width:1920px)" srcset="img/content/characteristics-desktop.jpg">
+                                <img class="characteristics__image" src="img/content/characteristics-tablet.jpg" width="402" height="375" alt="Изображение гироскутера Rizor Hovertrax 4.0">
+                            </picture>
+                            <h2 class="characteristics__name title">Rizor Hovertrax <span>4.0</span></h2>
+                        </div>
+                        <ul class="characteristics__list">
+                            <li class="characteristics__item characteristics__item--body">
+                                <h3 class="characteristics__title title">Корпус</h3>
+                                <p class="characteristics__text">выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты антискользящим покрытием.</p>
+                            </li>
+                            <li class="characteristics__item characteristics__item--wheel">
+                                <h3 class="characteristics__title title">Колеса</h3>
+                                <p class="characteristics__text"><b>Rizor Hovertrax 4.0</b> получил относительно ебольшие, но, в целом, среднего диаметра колёса в <b>6,5 дюймов.</b></p>
+                            </li>
+                            <li class="characteristics__item characteristics__item--power">
+                                <h3 class="characteristics__title title">Мощность</h3>
+                                <p class="characteristics__text">двигателя в <b>350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b>13 км/ч.</b></p>
+                            </li>
+                            <li class="characteristics__item characteristics__item--weight">
+                                <h3 class="characteristics__title title">Вес</h3>
+                                <p class="characteristics__text">небольшой вес, приблизительно в <b>12 кг</b>, позволяет относительно компактно переносить гироборд с собой.</p>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="characteristics__list">
-                        <li class="characteristics__item characteristics__item--body">
-                            <h3 class="characteristics__title title">Корпус</h3>
-                            <p class="characteristics__text">выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты антискользящим покрытием.</p>
-                        </li>
-                        <li class="characteristics__item characteristics__item--wheel">
-                            <h3 class="characteristics__title title">Колеса</h3>
-                            <p class="characteristics__text"><b>Rizor Hovertrax 4.0</b> получил относительно ебольшие, но, в целом, среднего диаметра колёса в <b>6,5 дюймов.</b></p>
-                        </li>
-                        <li class="characteristics__item characteristics__item--power">
-                            <h3 class="characteristics__title title">Мощность</h3>
-                            <p class="characteristics__text">двигателя в <b>350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b>13 км/ч.</b></p>
-                        </li>
-                        <li class="characteristics__item characteristics__item--weight">
-                            <h3 class="characteristics__title title">Вес</h3>
-                            <p class="characteristics__text">небольшой вес, приблизительно в <b>12 кг</b>, позволяет относительно компактно переносить гироборд с собой.</p>
-                        </li>
-                    </ul>
                 </section>
             </div>
             <section class="for c-block" id="for">
-                <div class="for__container wrapper">
-                    <picture>
-                        <source type="image/webp" media="(min-width:1920px)" srcset="img/content/for-desktop.webp">
-                        <source type="image/webp" media="(min-width:768px)" srcset="img/content/for-tablet.webp">
-                        <source type="image/webp" srcset="img/content/for-mobile.webp"><source media="(min-width:1920px)" srcset="img/content/for-desktop.jpg">
-                        <source media="(min-width:768px)" srcset="img/content/for-tablet.jpg">
-                        <img class="for__image" src="img/content/for-mobile.jpg" width="299" height="300" alt="Фото подростков с гироскутерами">
-                    </picture>
-                    <div class="for__info">
-                        <h2 class="for__title title">Для кого</h2>
-                        <div class="for__description">
-                            <p class="for__text">При максимально выдерживаемой нагрузке в 100 кг отлично подойдёт, как для подрастающего поколения, так и для более взрослых «наездников».</p>
-                            <p class="for__text">Это единственный гироскутер со специальным детским режимом езды.</p>
+                <div class="container">
+                    <div class="for__container wrapper">
+                        <picture>
+                            <source type="image/webp" media="(min-width:1920px)" srcset="img/content/for-desktop.webp">
+                            <source type="image/webp" media="(min-width:768px)" srcset="img/content/for-tablet.webp">
+                            <source type="image/webp" srcset="img/content/for-mobile.webp"><source media="(min-width:1920px)" srcset="img/content/for-desktop.jpg">
+                            <source media="(min-width:768px)" srcset="img/content/for-tablet.jpg">
+                            <img class="for__image" src="img/content/for-mobile.jpg" width="299" height="300" alt="Фото подростков с гироскутерами">
+                        </picture>
+                        <div class="for__info">
+                            <h2 class="for__title title">Для кого</h2>
+                            <div class="for__description">
+                                <p class="for__text">При максимально выдерживаемой нагрузке в 100 кг отлично подойдёт, как для подрастающего поколения, так и для более взрослых «наездников».</p>
+                                <p class="for__text">Это единственный гироскутер со специальным детским режимом езды.</p>
+                            </div>
+                            <a class="for__button" href="">Перейти в каталог</a>
                         </div>
-                        <a class="for__button" href="">Перейти в каталог</a>
                     </div>
                 </div>
             </section>

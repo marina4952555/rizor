@@ -1,19 +1,174 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  background-color: #fff;
+}
+details,
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,
+    monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+small {
+  font-size: 80%;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type=checkbox],
+[type=radio],
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+summary {
+  display: list-item;
+}
+[hidden],
+template {
+  display: none;
+}
+@font-face {
+  font-family: 'Rubik Mono One';
+  src: local('Rubik Mono One Regular'), url('/fonts/RubikMonoOne-Regular.woff2') format('woff2'), url('/fonts/RubikMonoOne-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), url('/fonts/Roboto-Bold.woff2') format('woff2'), url('/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), url('/fonts/Roboto-Light.woff2') format('woff2'), url('/fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
   font-size: 18px;
   line-height: 27px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: Roboto, sans-serif;
   color: black;
   font-style: normal;
+  font-weight: 300;
   background-color: white;
 }
 @media (min-width: 1920px) {
   body {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     position: relative;
@@ -23,7 +178,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -36,17 +191,33 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 3.45vw;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0 2.87vw;
+  }
+}
+@media (min-width: desktop-width) {
+  .wrapper {
+    padding: 0;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  font-family: "RubikMonoOne", "Arial", sans-serif;
+  font-family: Rubik Mono One, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
 }
 .title--section {
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 80px;
@@ -73,19 +244,6 @@ img {
     margin-top: 85px;
     margin-left: 845px;
     letter-spacing: 2px;
-  }
-}
-.wrapper {
-  padding: 0 3.45vw;
-}
-@media (min-width: 768px) {
-  .wrapper {
-    padding: 0 2.87vw;
-  }
-}
-@media (min-width: desktop-width) {
-  .wrapper {
-    padding: 0;
   }
 }
 .video {
@@ -271,10 +429,10 @@ img {
   cursor: pointer;
 }
 .header__button--closed {
-  background-image: url(/source/img/decor/icon-menu-open.svg);
+  background-image: url(/img/decor/icon-menu-open.svg);
 }
 .header__button--opened {
-  background-image: url(/source/img/decor/icon-menu-close.svg);
+  background-image: url(/img/decor/icon-menu-close.svg);
 }
 .header__button--no-js {
   display: none;
@@ -332,7 +490,7 @@ img {
     margin: 0 375px;
   }
   .header__top {
-    margin-right: 524px;
+    margin-right: 20%;
   }
 }
 .promo {
@@ -409,7 +567,7 @@ img {
     left: 30px;
     width: 11px;
     height: 95px;
-    background: url(/source/img/decor/arrow.png) no-repeat center;
+    background: url(/img/decor/arrow.png) no-repeat center;
   }
   .promo__video {
     right: -2.87vw;
@@ -424,7 +582,7 @@ img {
     left: -43px;
     width: 18px;
     height: 72px;
-    background: url(/source/img/decor/play-decor.png) no-repeat center;
+    background: url(/img/decor/play-decor.png) no-repeat center;
   }
   .promo__image {
     width: 478px;
@@ -448,7 +606,7 @@ img {
     left: 0;
     width: 511px;
     height: 878px;
-    background: url(/source/img/decor/gear.png) no-repeat center;
+    background: url(/img/decor/gear.png) no-repeat center;
   }
   .promo__description {
     margin-left: 353px;
@@ -494,7 +652,7 @@ img {
   .features {
     position: relative;
     margin-top: 200px;
-    background: url(/source/img/decor/gear.png) no-repeat 0 1175px;
+    background: url(/img/decor/gear.png) no-repeat 0 1175px;
   }
   .features::before {
     content: "";
@@ -503,7 +661,7 @@ img {
     right: 190px;
     width: 292px;
     height: 768px;
-    background: url(/source/img/decor/rizor-decor.png) no-repeat center;
+    background: url(/img/decor/rizor-decor.png) no-repeat center;
   }
   .features__list {
     display: -webkit-box;
@@ -550,7 +708,7 @@ img {
   left: 2px;
   width: 30px;
   height: 5px;
-  background: url(/source/img/decor/li.jpg) no-repeat center;
+  background: url(/img/decor/li.jpg) no-repeat center;
 }
 .feature__image {
   margin-left: -3.45vw;
@@ -638,27 +796,27 @@ img {
 .properties__item--engine::before {
   width: 54px;
   height: 42px;
-  background: url(/source/img/decor/engine-mobile.png) no-repeat center;
+  background: url(/img/decor/engine-mobile.png) no-repeat center;
 }
 @media (min-width: 1920px) {
   .properties__item--engine::before {
     width: 76px;
     height: 60px;
-    background-image: url(/source/img/decor/engine-desktop.png);
+    background-image: url(/img/decor/engine-desktop.png);
   }
 }
 .properties__item--gyroscope::before {
   top: 20px;
   width: 69px;
   height: 22px;
-  background: url(/source/img/decor/gyroscope-mobile.png) no-repeat center;
+  background: url(/img/decor/gyroscope-mobile.png) no-repeat center;
 }
 @media (min-width: 1920px) {
   .properties__item--gyroscope::before {
     top: 12px;
     width: 98px;
     height: 32px;
-    background-image: url(/source/img/decor/gyroscope-desktop.png);
+    background-image: url(/img/decor/gyroscope-desktop.png);
   }
 }
 .properties__item--accum:first-child {
@@ -817,7 +975,7 @@ img {
   left: 6px;
   width: 4px;
   height: 49px;
-  background: url(/source/img/content/color-arrow.svg) no-repeat center;
+  background: url(/img/content/color-arrow.svg) no-repeat center;
 }
 .colors-item:hover {
   -webkit-transform: scale(1.1);
@@ -899,7 +1057,7 @@ img {
     left: -51px;
     width: 18px;
     height: 290px;
-    background: url(/source/img/decor/decor-c.png) no-repeat center;
+    background: url(/img/decor/decor-c.png) no-repeat center;
   }
   .colors__text {
     width: 250px;
@@ -983,7 +1141,7 @@ img {
     left: -78px;
     width: 37px;
     height: 362px;
-    background: url(/source/img/decor/play-decor-i.png) no-repeat center;
+    background: url(/img/decor/play-decor-i.png) no-repeat center;
   }
   .indicators__video {
     margin: 0 70px;
@@ -1063,7 +1221,7 @@ img {
     right: -54px;
     width: 156px;
     height: 474px;
-    background: url(/source/img/decor/play-decor-m.png) no-repeat center;
+    background: url(/img/decor/play-decor-m.png) no-repeat center;
   }
   .modes__li {
     margin-top: 18px;
@@ -1163,7 +1321,7 @@ img {
     right: 54px;
     width: 86px;
     height: 256px;
-    background: url(/source/img/decor/decor-a.png) no-repeat center;
+    background: url(/img/decor/decor-a.png) no-repeat center;
   }
   .accum__features {
     margin-left: 0;
@@ -1326,7 +1484,7 @@ img {
 .characteristics__item--body::before {
   width: 68px;
   height: 51px;
-  background: url(/source/img/decor/body-mobile.png) no-repeat center;
+  background: url(/img/decor/body-mobile.png) no-repeat center;
 }
 .characteristics__item--wheel {
   width: 220px;
@@ -1334,7 +1492,7 @@ img {
 .characteristics__item--wheel::before {
   width: 53px;
   height: 53px;
-  background: url(/source/img/decor/wheel-mobile.png) no-repeat center;
+  background: url(/img/decor/wheel-mobile.png) no-repeat center;
 }
 .characteristics__item--weight {
   width: 230px;
@@ -1342,7 +1500,7 @@ img {
 .characteristics__item--weight::before {
   width: 47px;
   height: 52px;
-  background: url(/source/img/decor/weight-mobile.png) no-repeat center;
+  background: url(/img/decor/weight-mobile.png) no-repeat center;
 }
 .characteristics__item--power {
   width: 290px;
@@ -1350,7 +1508,7 @@ img {
 .characteristics__item--power::before {
   width: 50px;
   height: 40px;
-  background: url(/source/img/decor/power-mobile.png) no-repeat center;
+  background: url(/img/decor/power-mobile.png) no-repeat center;
 }
 .characteristics__title {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1433,7 +1591,7 @@ img {
     right: 192px;
     width: 292px;
     height: 768px;
-    background: url(/source/img/decor/rizor-decor.png) no-repeat center;
+    background: url(/img/decor/rizor-decor.png) no-repeat center;
   }
   .characteristics__main {
     margin-top: 88px;
@@ -1479,28 +1637,28 @@ img {
     left: -60px;
     width: 89px;
     height: 67px;
-    background: url(/source/img/decor/body-desktop.png) no-repeat center;
+    background: url(/img/decor/body-desktop.png) no-repeat center;
   }
   .characteristics__item--wheel::before {
     top: 45px;
     left: -50px;
     width: 70px;
     height: 70px;
-    background: url(/source/img/decor/wheel-desktop.png) no-repeat center;
+    background: url(/img/decor/wheel-desktop.png) no-repeat center;
   }
   .characteristics__item--weight::before {
     top: 40px;
     left: -45px;
     width: 62px;
     height: 68px;
-    background: url(/source/img/decor/weight-desktop.png) no-repeat center;
+    background: url(/img/decor/weight-desktop.png) no-repeat center;
   }
   .characteristics__item--power::before {
     top: 55px;
     left: -50px;
     width: 66px;
     height: 53px;
-    background: url(/source/img/decor/power-desktop.png) no-repeat center;
+    background: url(/img/decor/power-desktop.png) no-repeat center;
   }
   .characteristics__title {
     font-size: 20px;
@@ -1650,7 +1808,7 @@ img {
     left: 0;
     width: 511px;
     height: 790px;
-    background: url(/source/img/decor/gear.png) no-repeat 0 0;
+    background: url(/img/decor/gear.png) no-repeat 0 0;
     opacity: 0.1;
   }
   .for__container {

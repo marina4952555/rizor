@@ -1,0 +1,58 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Roboto, sans-serif;
+  color: black;
+  font-style: normal;
+  font-weight: 300;
+  
+  background-color: white;
+
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: @desktop-width;
+  margin: 0 auto;
+}
+
+.wrapper{
+  padding:0 3.45vw;
+
+  @media (min-width: @tablet-width){
+    padding: 0 2.87vw;
+  }
+
+  @media (min-width: desktop-width){
+    padding: 0;
+  }
+}
