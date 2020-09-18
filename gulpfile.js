@@ -36,7 +36,6 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
